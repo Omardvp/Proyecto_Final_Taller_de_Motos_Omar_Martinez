@@ -1,0 +1,76 @@
+.t-servicios {
+    h2{
+        text-align: center;
+        background-color: $colorSecundario;
+    }
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width:1200px) {
+        flex-wrap: wrap;
+    }
+    section {
+        width: 600px;
+        height: 350px;
+        @media (max-width:772px) {
+            width: 310px; 
+            height: 610px;
+        }
+        
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            background-color: rgb(190, 6, 6);
+            color: white;
+            border-radius: 5px;
+        }
+        h3 {
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(165, 156, 156);
+            font-size: 25px;
+            padding: 10px;
+        }
+        article {
+            padding: 10px;
+            margin-top: 10px;
+            width: 600px;
+            height: 100px;
+            @media (max-width:772px) {
+                width: 310px;
+                height: 150px;
+            }
+            
+        }
+        .service-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            @media (max-width:772px) {
+                flex-direction: column-reverse;
+            }
+            img {
+                width: 300px;
+                height: 200px;
+                border-radius: 5px;
+            }
+            .service-info-l {
+                padding: 10px;
+                width: 300px;
+                height: 200px;
+                
+                li {
+                    margin-left: 15px;
+                    list-style-type: disc;
+                }
+                span {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}

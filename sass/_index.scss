@@ -1,0 +1,267 @@
+.banner-inicio {
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/moto4.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 1000px;
+        color: $colorQuinto;
+        
+        text-align: center;
+        font-family: $slogan;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-family: $slogan;
+        color:$colorCuarto;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
+
+.articulos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgba(250, 250, 250, .5);
+    padding: 40px 20px;
+    border-radius: 10px;
+    font-family: $texto;
+    text-align: center;
+    @media (max-width:552px) {
+        flex-direction: column;
+       }
+    :hover {
+        transition: .4s ease-out;
+        transform: scale(1.1);
+    }
+
+    
+    .slogan {
+        width: 30%;
+        text-align: center;
+        padding: 10px;
+        background-color: $colorQuinto;
+        border-radius: 10px;
+        
+        
+        @media (max-width:552px) {
+            width: 283px;
+            height: 221px;
+            margin-bottom: 15px;;
+            
+        }
+        .s-titulos {
+            margin-bottom: 14px;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.banner-articulos {
+    width: 100%;
+    height:400px;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    @media (max-width:552px) {
+        height: 830px;
+        
+    }
+}
+
+.index-content {
+    margin: 40px auto;
+    :hover {
+        transition: .4s ease-out;
+        transform: scale(1.1);
+    }
+    
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 24px;
+        
+    }
+    p {
+        padding: 30px;
+        border: solid 2px black;
+        border-radius: 10px;
+        text-align: center;
+        @media (max-width:992px) {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+    }
+}
+
+.fotosServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+
+    border: solid 1px white;
+    @media (max-width:552px) {
+        justify-content: space-around;
+        margin-left: 0px;
+    }
+    article {
+        margin-left: 30px;
+        margin-bottom: 20px;
+         img {
+            width: 160px;
+            height: 160px;
+        }
+        :hover {
+            transition: .4s ease-out;
+            transform: scale(1.1);
+        }
+        @media (max-width:552px) {
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+       
+        
+}
+.servicios-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width:992px) {
+        flex-direction: column;
+        height: 1550px;
+    }
+    @media (max-width:552px) {
+        flex-direction: column;
+    }
+
+    
+    
+    .contenedore {
+        width: 800px;
+        height: 700px;
+        padding: 20px;
+        margin-left: 100px;
+        margin-top: 60px;
+        @media (max-width:1026px) {
+            margin-bottom: 200px;
+        }
+        
+        @media (max-width:992px) {
+            margin: 20px auto 0;
+        }
+        @media (max-width:800px) {
+            width: 600px;
+            height: 1200px;
+            margin-top: 50px;
+         }
+        @media (max-width:600px) {
+            width: 100%;
+            height: 700px;
+            margin-bottom: 45px;
+            
+        }
+       @media (max-width:552px) {
+           width: 350px;
+       }
+    }
+    
+    aside {
+        width: 300px;
+        height: 800px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: solid 1px black;
+        text-align: center;
+        background-color: #991803;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='163' height='163' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.74'%3E%3Cpolygon fill='%230f0f0f' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%230f0f0f' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
+        color: white;
+        border-radius: 5px;
+        @media (max-width:992px) {
+            width: 800px;
+            margin: 50px auto 0;
+            }
+            @media (max-width:800px) {
+                width: 550px;
+                
+                
+            }
+                @media (max-width:552px) {
+                width: 400px;
+                .wsp-aside {
+                    justify-content: space-between;
+                }
+                @media (max-width:420px) {
+                    width: 300px;
+                    margin-bottom: 40px;
+                }
+            }   
+        h3 {
+            margin-bottom: 20px;
+            color: white;
+        }
+        img {
+            border-radius: 5px;
+        }
+        .wsp-aside {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: black;
+            padding: 15px;
+            border-radius: 5px;
+
+            i {
+                font-size: 30px;
+                color:  #00bb2d;
+            }
+            p {
+                font-size: 25px;
+                color: $colorCuarto;
+            }
+        }
+        
+    }
+   
+        button {
+            border: none;
+        display: block;
+        margin: 0 auto;
+        background-color: $colorTercero;
+        border-radius: 10px;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+            p {
+                color: $colorCuarto;
+                font-size: 20px;
+            }
+        }
+    }

@@ -1,0 +1,24 @@
+.servicios-content {
+    margin: 40px auto;
+    border: solid 1px $colorPricipal;
+    h2 {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    img {
+        @media (max-width:992px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+    }
+}
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h4 {
+    color:$colorPricipal;
+}
+
